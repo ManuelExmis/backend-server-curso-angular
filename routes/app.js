@@ -7,6 +7,6 @@ app.get('/', (req, res, next) => {
         ok: true,
         mensaje: 'Peticion realizada correctamente'
     });
-})
+});
 
 module.exports = app;

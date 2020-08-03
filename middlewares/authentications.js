@@ -13,7 +13,9 @@ module.exports.varificaToken = function(req, res, next) {
             });
         }
 
-        req.usuarioToken = decoded;
+        req.usuario = decoded.usuario;
+
+        // console.log('USUARIO TOKE: ', req.usuarioToken);
 
         next();
     });
